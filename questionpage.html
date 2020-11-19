@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE-edge" http-equiv="X-UA-Compatible"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Question Page</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap4/font/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="wowjs/css/libs/animate.css">
+    <link rel="stylesheet" href="./questionpage.css">
+
+    
+<script src="bootstrap4/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="wowjs/dist/wow.js"></script>
+<script type="text/javascript" src="bootstrap4/js/popper.js"></script>
+<script type="text/javascript"src="bootstrap4/js/bootstrap.js"></script>
+<script src="./timer.js"></script>
+<script src="./instructionpage.html"></script>
+
+</head>
+<body>
+    
+    <div id="cbtContainer" class="container">
+        
+        <div class = "title">CBT QUESTIONS
+            <header>
+                <div class="timer">
+                    <input type="hidden" id="hr" name="" > Time Left: 1:
+                    <input type="hidden" id="min" name=""> 10:
+                    <input type="hidden" id="sec" name=""> 00<br><br>
+                </div>
+            </header>
+        </div>
+        <div id="question" class="question">What is a noun</div>
+        <label class = "option"><input type="radio" name="option" value="1"><span id="opt1">one</span></label>
+        <label class = "option"><input type="radio" name="option" value="2"><span id="opt2">two</span></label>
+        <label class = "option"><input type="radio" name="option" value="3"><span id="opt3">three</span></label>
+        <label class = "option"><input type="radio" name="option" value="4"><span id="opt4">four</span></label>
+        <button id="nextButton" class="previous-btn" onclick="loadPreviousQuestion();">Previous Question</button>
+        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Submit</button>
+        <button id="nextButton" class="next-btn">Next Question</button>
+
+    </div>
+    
+</body>
+</html>             

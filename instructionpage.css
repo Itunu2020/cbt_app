@@ -1,0 +1,83 @@
+body {
+    background-color: #F3EBF6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.info_box {
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 100px;
+    margin: 9em auto;
+    border-radius: 1.5em;
+    box-shadow: 10px 35px 35px 35px rgba(0, 0, 0, 0.14);
+}
+.info_box .info_title{
+ height: 60px; 
+ width: 100%;
+ display: flex;
+ font-size: 25px;
+ font-weight: 500;
+ text-align: center;
+ border-bottom: 1px solid lightgray ;
+ padding: 30px 60px;
+ color: #B848FF;
+ margin: 25px;
+}
+.info_box .info_list{
+ padding: 35px 55px;
+ height: 50px;
+ top: 50px;
+ font-family: 'Ubuntu', sans-serif;
+
+}
+.info_box .info_list .info{
+ margin: 5px 10px;
+ font-size: 17px;
+}
+.info_box .info_list.info span{
+ font-weight: 600;
+ color: #007bff;
+}
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 25px;
+    border-top: 1px solid lightgray;
+}
+.info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 80px;
+    border: 1px solid #F3EBF6;
+    border-radius: 20px;
+    font-size: 14px;
+    background: #F3EBF6;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons button.quit{
+    color: black;
+    background: #F3EBF6;
+}
+.buttons button.quit:hover{
+    background: #B848FF;
+}
+.buttons button.start{
+    color: black;
+    background: #F3EBF6 ;
+}
+.buttons button.start:hover{
+    background: #B848FF;
+}
+a{
+    text-decoration: none;
+}
+
+@media (min-device-width:1000px) {
+	.info_box{
+		height: 350px;
+	}
+}
